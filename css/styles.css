@@ -1,0 +1,937 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    
+}
+
+.navBar {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    max-height: 96px;
+    align-items: center;
+    
+
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 1rem;
+    font-family: Quicksand;
+}
+
+.botonPrincipal {
+    background-color:#365902;
+    border-radius: 30px;
+    padding: 16px 24px;
+    color:white;
+    font-size: 1rem;
+    border: 1px;
+    text-decoration: none;
+    font-family: Quicksand; 
+}
+
+.titulo-imagen {
+    display: grid;
+    grid-template-columns: repeat(12, 78px); 
+    grid-template-rows: repeat(3,auto);
+    gap: 24px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.titulo {
+    grid-column: 1 / span 9;
+}
+
+.titulo h1 {
+    font-family: Quicksand;
+    font-size: 2.5625rem;
+    text-align: left;
+    padding-top: 6rem;
+
+}
+
+.guardarEn {
+    grid-column: 11 / span 2;
+}
+
+.guardarEn {
+    display: flex;
+    align-items: center;
+}
+.icono {
+    width: 24px; 
+    height: 24px;
+    margin-right: 5px; 
+    vertical-align: middle; 
+}
+
+label {
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+.guardarEn label {
+    font-family: Quicksand;
+    font-size: 16px;
+    color: #9E9E9E;
+}
+
+.calificacion {
+    grid-column: 1 / span 2;
+}
+
+.calificacion p {
+    font-family: Quicksand;
+    font-size: .875rem;
+}
+
+.imagen-principal {
+    
+    grid-column: 1 / span 12;
+    height: 390px;
+    border-radius: 20px;
+    background-size:unset;
+    background-position:absolute;
+    object-fit: cover;
+}
+
+.ingredientes {
+    display: grid;
+    grid-template-columns: repeat(12, 78px); 
+    grid-template-rows: repeat(3,auto);
+    gap: 24px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.ingredientes h2 {
+    grid-column: 1 / span 6;
+    font-family: Quicksand;
+
+}
+
+.lista-ingredientes {
+    grid-column: 1 / span 6;
+    list-style: none;
+    padding: 0;
+    li {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.lista-ingredientes li {
+    font-family: Quicksand;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.lista-ingredientes span {
+    color: #A62F14;
+}
+
+.instrucciones {
+    display: grid;
+    grid-template-columns: repeat(12, 78px); 
+    grid-template-rows: repeat(4,auto);
+    gap: 24px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.instrucciones h2 {
+    grid-column: 1 / span 6;
+    font-family: Quicksand;
+}
+
+.pasos-receta {
+    grid-column: 1 / span 6;
+}
+
+.pasos-receta h3 {
+    font-family: Quicksand;
+    font-size: 1.4375rem;
+    padding-top: 1rem;
+    font-weight: 400;
+}
+
+.pasos-receta p {
+    font-family: Quicksand;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pasos-receta article img {
+    padding-bottom: 1rem;
+}
+
+.divider-paso {
+    grid-column: 1 / span 6;
+    background-color: #ccc;
+    height: 1px;
+    
+}
+.recetas-relacionadas {
+    display: grid;
+    grid-template-columns: repeat(12, 78px); 
+    grid-template-rows: repeat(4,auto);
+    gap: 24px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.recetas-relacionadas h2 {
+    grid-column: 1 / span 6;
+    font-family: Quicksand;
+}
+
+.container-card {
+    padding: 16px;
+    width: 282px;
+    height: 361px;
+    border-radius: 20px;
+    background-color: #F1F1F1; 
+    transition: all 400ms ease;
+}
+
+.container-card:hover{
+    box-shadow: 5px 5px 20px rgba (0,0,0,2);
+    transform:translateY(-3%);
+}
+.container-interno {
+    width: 250px;
+    height: 329px;
+    padding: 16px;
+    margin: 0 auto; 
+}
+
+.imagen {
+    width: 100%;
+    height: 198px;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.container-interno h3 {
+    font-size: 1.4375rem;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 10px;
+    font-family: Quicksand;
+}
+
+.container-calificacion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container-calificacion {
+    font-family: Quicksand;
+    font-size: .875rem;
+}
+
+.container-calificacion div p {
+    font-size: 14px;
+}
+
+.card1 {
+    grid-column: 1/span 3; 
+    padding-right: 24px;
+}
+
+.card2 {
+    grid-column: 4 /span 3; 
+    padding-right: 24px;
+}
+
+.card3 {
+    grid-column: 7 /span 3; 
+    padding-right: 24px;
+}
+
+.card4 {
+    grid-column: 10 /span 3; 
+    padding-right: 24px;
+}
+
+/*footer-section-start*/ 
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    gap: 16px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 6rem;
+}
+
+.logo {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    padding-bottom: 3rem;
+}
+
+.datos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+    margin: 0px;
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 4;
+    padding-top: 1.5rem;
+}
+
+.datos h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.datos p {
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+
+.containerFollow {
+    align-items: start;
+    grid-column: 9 / span 2;
+    grid-row: 4 / span 1;
+    text-align: center;
+
+}
+.descargaDely {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 9 / span 2;
+    grid-row: 2 / span 1;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.descargaDely h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500; 
+}
+
+.botonesTienda {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-column: 9 / span 2;
+    grid-row: 3 / span 1;
+    gap: 16px;
+}
+.descargaApple {
+    grid-column: 11 / span 2;
+    grid-row: 3 / span 2;
+    text-align: center;
+}
+
+.descargaAndroid {
+    grid-column: 9 / span 2;
+    grid-row: 3 / span 2;
+    text-align: center;
+}
+
+.sigue-dely {
+    grid-column: 9 / span 2;
+    grid-row: 4 / span 1;
+    text-align: center;
+}
+
+.sigue-dely h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.redes-sociales {
+    grid-column: 9 / span 2;
+    grid-row: 5 / span 1;
+    display: flex;
+    gap: 16px;
+    justify-content:flex-start;
+    padding-top: 1rem;
+}
+
+.redes-sociales button {
+    margin: 0 5px;
+}
+
+.divider {
+    grid-column: 1 / span 12;
+    grid-row: 6 / span 1;
+    background-color: #ccc;
+    height: 1px;
+    
+}
+
+.derechos {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    text-align: left;
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: .875rem;
+}
+
+.politica {
+    grid-column: 11 / span 2;
+    grid-row: 6 / span 1;
+    text-align: right;
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: .875rem;
+}
+
+
+/*MediaQueries-------------------*/
+@media (max-width: 1024px) {
+    .titulo {
+        grid-column: 2 / span 6;
+    }
+
+    .guardarEn {
+        grid-column: 9;
+        grid-row: 1;
+    }
+
+    .calificacion {
+        grid-column: 2 / span 3;
+    }
+
+    .imagen-principal {
+    
+        grid-column: 1 / span 9;
+        background-size:unset;
+        background-position:absolute;
+        object-fit: cover;
+        width: 997px;
+    }
+
+    .ingredientes h2 {
+        grid-column: 2 / span 7;
+        font-family: Quicksand;
+    
+    }
+
+    .lista-ingredientes {
+        grid-column: 2 / span 7;
+    }
+
+    .instrucciones h2 {
+        grid-column: 2 / span 6;
+        font-family: Quicksand;
+    }
+    
+    .pasos-receta {
+        grid-column: 2 / span 6;
+    }
+
+    .recetas-relacionadas {
+        display: grid;
+        grid-template-columns: repeat(8, 78px); 
+        grid-template-rows: repeat(4,auto);
+        gap: 24px; 
+        padding: 20px; 
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+    .recetas-relacionadas h2 {
+        grid-column: 2 / span 6;
+        font-family: Quicksand;
+    }
+
+    .card1 {
+        grid-column: 2/ span 4; 
+        grid-row: 2;
+        padding-right: 24px;
+    }
+    
+    .card2 {
+        grid-column: 6 / span 9; 
+        grid-row: 2;
+        padding-right: 24px;
+    }
+    
+    .card3 {
+        grid-column: 2 / span 4; 
+        grid-row: 3;
+        padding-right: 24px;
+    }
+    
+    .card4 {
+        grid-column: 6 / span 9; 
+        grid-row: 3;
+        padding-right: 24px;
+    }
+
+    /*footer*/
+    .descargaDely {
+        display: flex;
+        justify-content: flex-start;
+        grid-column: 8 / span 3;
+        grid-row: 2 / span 1;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+
+    .botonesTienda {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        grid-column: 8 / span 2;
+        grid-row: 3 / span 1;
+        gap: 16px;
+    }
+
+    .containerFollow {
+        align-items: start;
+        grid-column: 8 / span 3;
+        grid-row: 4 / span 1;
+        text-align: center;
+    
+    }
+
+    .sigue-dely {
+        grid-column: 8 / span 2;
+        grid-row: 4 / span 1;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        grid-column: 1 / span 2;
+        grid-row: 9 / span 1;
+        display: flex;
+        gap: 16px;
+        justify-content:flex-start;
+        padding-top: 1rem;
+    }
+
+    .redes-sociales button {
+        margin: 0 5px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .titulo-imagen {
+        display: grid;
+        grid-template-columns: repeat(8, 78px); 
+        grid-template-rows: repeat(3,auto);
+        gap: 24px; 
+        padding: 20px; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+
+    .titulo {
+        grid-column: 1 / span 7;
+    }
+
+    .guardarEn {
+        grid-column: 8;
+        grid-row: 1;
+    }
+
+    .calificacion {
+        grid-column: 1 / span 2;
+    }
+
+    .imagen-principal {
+    
+        grid-column: 1 / span 8;
+        background-size:unset;
+        background-position:absolute;
+        object-fit: cover;
+        width: 800px;
+    }
+
+    .ingredientes {
+        display: grid;
+        grid-template-columns: repeat(8, 78px); 
+        grid-template-rows: repeat(3,auto);
+    }
+
+    .ingredientes h2 {
+        grid-column: 2 / span 6;
+        font-family: Quicksand;
+    
+    }
+
+    .lista-ingredientes {
+        grid-column: 2 / span 6;
+    }
+
+    .ingredientes h2 {
+        grid-column: 2 / span 6;
+        font-family: Quicksand;
+    
+    }
+
+    .lista-ingredientes {
+        grid-column: 2 / span 6;
+    }
+
+    .instrucciones {
+        display: grid;
+        grid-template-columns: repeat(8, 78px); 
+        grid-template-rows: repeat(4,auto);
+        gap: 24px; 
+        padding: 20px; 
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+    .instrucciones h2 {
+        grid-column: 2 / span 6;
+        font-family: Quicksand;
+    }
+    
+    .pasos-receta {
+        grid-column: 2 / span 6;
+    }
+
+    .recetas-relacionadas {
+        display: grid;
+        grid-template-columns: repeat(8, 78px); 
+        grid-template-rows: repeat(4,auto);
+        gap: 24px; 
+        padding: 20px; 
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+    .recetas-relacionadas h2 {
+        grid-column: 2 / span 6;
+        font-family: Quicksand;
+    }
+
+    .card1 {
+        grid-column: 2/ span 4; 
+        grid-row: 2;
+        padding-right: 24px;
+    }
+    
+    .card2 {
+        grid-column: 5 / span 7; 
+        grid-row: 2;
+        padding-right: 24px;
+    }
+    
+    .card3 {
+        grid-column: 2 / span 4; 
+        grid-row: 3;
+        padding-right: 24px;
+    }
+    
+    .card4 {
+        grid-column: 5 / span 7; 
+        grid-row: 3;
+        padding-right: 24px;
+    }
+
+}
+
+@media (max-width: 475px) {
+    header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        position: sticky;
+        padding-right: 16px;
+        
+    }
+    
+    .navBar {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 2rem;
+        padding-right: 0;
+        padding-top: 0;
+        max-height: 96px;
+        align-items: center;
+    }
+    
+    .navBar li a {
+        display: none;
+    }
+    
+    .botonPrincipal {
+        display: none;       
+    }
+
+    .navBar img {
+        justify-content: center;
+    }
+    /*----------------*/
+    .titulo-imagen {
+        display: grid;
+        grid-template-columns: repeat(4, 78px); 
+        grid-template-rows: repeat(3,auto);
+        gap: 24px; 
+        padding: 20px; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+
+    .titulo {
+        grid-column: 1 / span 4;
+    }
+
+    .titulo h1 {
+        padding-top: 0rem;
+    }
+
+    .guardarEn {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .calificacion {
+        grid-column: 1 / span 2;
+    }
+
+    .imagen-principal {
+    
+        grid-column: 1 / span 4;
+        width: 385px;
+        height: 270px;
+        background-size:unset;
+        background-position:absolute;
+        object-fit: cover;
+    }
+
+    .ingredientes {
+        display: grid;
+        grid-template-columns: repeat(4, 78px); 
+        grid-template-rows: repeat(3,auto);
+    }
+
+    .ingredientes h2 {
+        grid-column: 1 / span 4;
+        font-family: Quicksand;
+    
+    }
+
+    .lista-ingredientes {
+        grid-column: 1 / span 4;
+    }
+
+    .instrucciones {
+        display: grid;
+        grid-template-columns: repeat(4, 78px); 
+        grid-template-rows: repeat(4,auto);
+        gap: 24px; 
+        padding: 20px; 
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+    .instrucciones h2 {
+        grid-column: 1 / span 4;
+        font-family: Quicksand;
+    }
+    
+    .pasos-receta {
+        grid-column: 1 / span 4;
+    }
+
+    .pasos-receta article img {
+        width: 385px;
+        height: 260px;
+    }
+
+    .recetas-relacionadas {
+        display: grid;
+        grid-template-columns: repeat(4, 78px); 
+        grid-template-rows: repeat(5,auto);
+        gap: 24px; 
+        padding: 20px; 
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+    .recetas-relacionadas h2 {
+        grid-column: 1 / span 4;
+        font-family: Quicksand;
+    }
+
+    .card1 {
+        grid-column: 1 / span 4; 
+        grid-row: 2 ;
+        padding-right: 0px;
+    }
+    
+    .card2 {
+        grid-column: 1 / span 4; 
+        grid-row: 3;
+        padding-right: 0px;
+    }
+    
+    .card3 {
+        grid-column: 1 / span 4; 
+        grid-row: 4;
+        padding-right: 0px;
+    }
+    
+    .card4 {
+        grid-column: 1 / span 4; 
+        grid-row: 5;
+        padding-right: 0px;
+    }
+
+    .container-card {
+        padding: 16px;
+        width: 100%;
+        height: 361px;
+        border-radius: 20px;
+        background-color: #F1F1F1; 
+        transition: all 400ms ease;
+    }
+    
+    .container-card:hover{
+        box-shadow: 5px 5px 20px rgba (0,0,0,2);
+        transform:translateY(-3%);
+    }
+    .container-interno {
+        width: 100%;
+        height: 329px;
+        padding: 16px;
+        margin: 0 auto; 
+    }
+    
+    .imagen {
+        width: 100%;
+        height: 198px;
+        border-radius: 10px;
+        object-fit: cover; 
+    }
+    
+    .container-interno h3 {
+        font-size: 1.4375rem;
+        text-align: left;
+        font-weight: 400;
+        margin-top: 10px;
+        font-family: Quicksand;
+    }
+    
+    .container-calificacion {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .container-calificacion {
+        font-family: Quicksand;
+        font-size: .875rem;
+    }
+    
+    .container-calificacion div p {
+        font-size: 14px;
+    }
+
+    /*footer*/
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 50px);
+        column-gap: 16px;
+        gap: 16px; 
+        margin-top: 6rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .descargaDely {
+        display: flex;
+        justify-content: flex-start;
+        grid-column: 1 / span 8;
+        grid-row: 5 / span 1;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+
+    .botonesTienda {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        grid-column: 1 / span 12;
+        grid-row: 6 / span 1;
+        gap: 16px;
+    }
+
+    .containerFollow {
+        align-items: start;
+        grid-column: 1 / span 8;
+        grid-row: 7 / span 1;
+        text-align: center;
+    
+    }
+
+    .redes-sociales {
+        grid-column: 1 / span 2;
+        grid-row: 9 / span 1;
+        display: flex;
+        gap: 16px;
+        justify-content:flex-start;
+        padding-top: 1rem;
+    }
+
+    .divider {
+        grid-column: 1 / span 10;
+        grid-row: 9 / span 1;
+        background-color: #ccc;
+        height: 1px;
+        
+    }
+    
+    .derechos {
+        grid-column: 1 / span 6;
+        grid-row: 9 / span 1;
+    }
+    
+    .politica {
+        grid-column: 9 / span 10;
+        grid-row: 9 / span 1;
+    }    
+}
